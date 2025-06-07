@@ -7,8 +7,8 @@ Welcome to the **SkinWise** homepage repository! This is a clean and responsive 
 ## 📸 Live Preview
 
 👉 [Visit Homepage](https://home.skinwise.tech)  
-📲 [Download Android APK](https://skinwise.tech/SkinWise.apk)  
-🍏 iOS users: See [installation instructions](#iphone-users-add-skinwise-to-your-home-screen)
+📲 [Download Android APK](https://home.skinwise.tech/SkinWise.apk)  
+🍏 iOS users: See [installation instructions](https://home.skinwise.tech/#ios-install)
 
 ---
 
