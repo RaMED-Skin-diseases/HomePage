@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkinWise - AI Skin Diagnosis</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .fade-in {
+      animation: fadeIn 1.2s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .bounce-hover:hover {
+      animation: bounce 0.6s;
+    }
+
+    @keyframes bounce {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-5px);
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+  <!-- Hero Section -->
+  <section class="text-center py-16 px-6 bg-gradient-to-br from-green-100 to-blue-100 shadow-md fade-in">
+    <div class="flex items-center justify-center mb-4 space-x-4">
+      <img src="logo.png" alt="SkinWise Logo" class="h-12 w-auto">
+      <h1 class="text-5xl font-bold text-green-800 transition duration-700">SkinWise</h1>
+    </div>
+
+    <p class="text-xl mb-8 text-gray-700 transition duration-700 delay-100">AI-Powered Skin Diagnosis - Know your skin.
+    </p>
+    <div class="max-w-3xl mx-auto mb-8">
+      <video class="w-full rounded-lg shadow-lg transition-transform transform hover:scale-105 duration-300" controls>
+        <source src="promo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="SkinWise.apk"
+        class="bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded-lg text-lg transition duration-300 transform hover:scale-105 bounce-hover">📥
+        Download APK</a>
+      <a href="https://skinwise.tech"
+        class="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg text-lg transition duration-300 transform hover:scale-105 bounce-hover">🌐
+        Open Web App</a>
+      <a href="#ios-install"
+        class="bg-gray-700 hover:bg-gray-800 text-white py-3 px-6 rounded-lg text-lg transition duration-300 transform hover:scale-105 bounce-hover">🍏
+        iOS Install Guide</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-20 px-6 bg-white">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 text-left">
+      <div class="p-6 bg-gray-50 rounded-lg shadow hover:shadow-xl transition duration-300 transform hover:scale-105"
+        data-sr-id="1">
+        <h2 class="text-2xl font-semibold mb-2">🔍 AI Diagnosis</h2>
+        <p class="text-gray-600">Upload a skin image and receive instant analysis powered by deep learning and
+          dermatology research.</p>
+      </div>
+      <div class="p-6 bg-gray-50 rounded-lg shadow hover:shadow-xl transition duration-300 transform hover:scale-105"
+        data-sr-id="2">
+        <h2 class="text-2xl font-semibold mb-2">👨‍⚕️ Doctor Interaction</h2>
+        <p class="text-gray-600">Chat securely with verified dermatologists and get detailed treatment plans and
+          follow-up care.</p>
+      </div>
+      <div class="p-6 bg-gray-50 rounded-lg shadow hover:shadow-xl transition duration-300 transform hover:scale-105"
+        data-sr-id="3">
+        <h2 class="text-2xl font-semibold mb-2">📱 Mobile-First</h2>
+        <p class="text-gray-600">Seamlessly access via Android or iOS. No downloads needed for iPhone – just add to your
+          home screen.</p>
+      </div>
+      <div class="p-6 bg-gray-50 rounded-lg shadow hover:shadow-xl transition duration-300 transform hover:scale-105"
+        data-sr-id="4">
+        <h2 class="text-2xl font-semibold mb-2">🔒 Secure & Private</h2>
+        <p class="text-gray-600">All your images and data are stored securely using encrypted cloud infrastructure. Your
+          privacy is our priority.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- iOS Instructions -->
+  <section id="ios-install" class="py-20 px-6 bg-gradient-to-r from-blue-50 to-green-50 fade-in">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6 text-blue-900">📱 iPhone Users: Add SkinWise to Your Home Screen</h2>
+      <ol class="text-left text-lg list-decimal list-inside space-y-3 text-gray-700">
+        <li>Open <strong>Safari</strong> and go to <a href="https://skinwise.tech"
+            class="text-blue-600 underline">skinwise.tech</a></li>
+        <li>Tap the <strong>Share</strong> button (square with arrow pointing up)</li>
+        <li>Select <strong>"Add to Home Screen"</strong></li>
+        <li>Tap <strong>Add</strong> in the top-right corner</li>
+      </ol>
+      <p class="mt-4 text-gray-700">SkinWise will now appear on your home screen like a regular app!</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 px-6 bg-gray-900 text-white text-center fade-in">
+    <p class="mt-4 text-sm">&copy; 2025 SkinWise. All rights reserved.</p>
+  </footer>
+
+  <script>
+    ScrollReveal().reveal('[data-sr-id]', {
+      duration: 1000,
+      distance: '50px',
+      easing: 'ease-in-out',
+      origin: 'bottom',
+      interval: 200
+    });
+
+    // Animate headline on load
+    window.addEventListener('DOMContentLoaded', () => {
+      document.querySelector('h1').classList.add('fade-in');
+    });
+  </script>
+</body>
+
+</html>
